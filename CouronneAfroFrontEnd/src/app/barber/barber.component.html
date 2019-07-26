@@ -1,0 +1,21 @@
+
+
+<ul class="list-unstyled">
+  <li *ngFor="let barber of barbers" (click)="onSelect(barber)" class="media" [class.selected]="barber ===selectedBarber">
+    <img class="mr-3" src="../../assets/img/125-IMG_0131.jpg" alt="" width="200px" height="200px">
+    <div class="media-body">
+      <h5> {{barber.name}}</h5>
+      <p>Les coiffures de {{barber.name}}</p>
+      <img src="https://cdn1.iconfinder.com/data/icons/iconmart-web-icons-2/64/camera-512.png" routerLink="/rendezVousConfirmation"  alt="" height="25px" width="25px">
+    </div>
+    <div class="media-body">
+      <h5>{{barber.dispos}}</h5>
+    </div>
+    <div>
+      <button routerLink="/payment" > Prendre Rendez vous avec {{barber.name}}</button>
+    </div>
+  </li>
+</ul>
+
+<app-rendez-vous-confirmation-screen [barber]="selectedBarber"> </app-rendez-vous-confirmation-screen>
+

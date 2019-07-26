@@ -1,0 +1,51 @@
+<h5>Rajouter les details des clientes</h5>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-auto">
+    <img src="../../assets/img/141-IMG_0148.jpg" alt="" height="500"  width="500">
+    </div>
+
+    <div class="col-lg-auto">
+<form>
+
+  <div class="form-row">
+
+    <div class="form-group col-md-6">
+
+      <label for="inputClientName">Nom de la cliente</label>
+      <input type="text" class="form-control" id="inputClientName" placeholder="nom de la cliente" [(ngModel)]="clientDetail.clientName">
+
+    </div>
+
+    <div class="form-group col-md-6">
+
+      <label for="inputProductBought">Produit acheté</label>
+      <input type="text" class="form-control" id="inputProductBought" placeholder="produit acheté par la cliente" [(ngModel)]="clientDetail.itemBought"
+      >
+
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label for="inputClientGoal">Objectif de la cliente</label>
+    <input type="text" class="form-control" id="inputClientGoal" placeholder="objectif de la cliente" [(ngModel)]="clientDetail.goal">
+  </div>
+
+  <div class="form-group">
+    <label for="inputHairState">Etat des cheveux</label>
+    <input type="text" class="form-control" id="inputHairState" placeholder="Etat des cheveux" [(ngModel)]="clientDetail.hairState">
+  </div>
+
+  <div class="form-group">
+    <label for="inputClientRoutine">Routine proposée</label>
+    <input type="text" class="form-control" id="inputClientRoutine" placeholder="Routine proposée" [(ngModel)]="clientDetail.routine">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Rajouter</button>
+
+</form>
+  </div>
+  </div>
+</div>

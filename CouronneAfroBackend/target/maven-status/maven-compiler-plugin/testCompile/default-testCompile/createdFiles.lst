@@ -1,0 +1,7 @@
+api\user\client\ClientJsonResourceTest.class
+domain\user\id\UserIdFactoryTest.class
+domain\credential\CredentialTest.class
+domain\user\client\ClientFactoryTest.class
+application\service\user\client\ClientServiceTest.class
+domain\user\userProfile\UserProfileFactoryTest.class
+domain\credential\CredentialFactoryTest.class

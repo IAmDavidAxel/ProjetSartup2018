@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-auto">
+      <h5> Tableau de rendez vous</h5>
+
+      <p>
+        Ici vous pouvez poster les rendez que vous avez commencez mais pas encore terminer poster les détails les plus pertinents.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-lg-auto">
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+
+          <label for="inputClientName">Nom de la cliente</label>
+          <input type="text" class="form-control" id="inputClientName" placeholder="nom de la cliente" [(ngModel)]="clientDetail.clientName">
+
+        </div>
+
+        <div class="form-group col-md-6">
+
+          <label for="inputProductBought">Produit acheté</label>
+          <input type="text" class="form-control" id="inputProductBought" placeholder="produit acheté par la cliente" [(ngModel)]="clientDetail.itemBought"
+          >
+
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="inputClientGoal">Objectif de la cliente</label>
+        <input type="text" class="form-control" id="inputClientGoal" placeholder="objectif de la cliente" [(ngModel)]="clientDetail.goal">
+      </div>
+
+      <div class="form-group">
+        <label for="inputHairState">Etat des cheveux</label>
+        <input type="text" class="form-control" id="inputHairState" placeholder="Etat des cheveux" [(ngModel)]="clientDetail.hairState">
+      </div>
+
+      <div class="form-group">
+        <label for="inputClientRoutine">Routine proposée</label>
+        <input type="text" class="form-control" id="inputClientRoutine" placeholder="Routine proposée" [(ngModel)]="clientDetail.routine">
+      </div>
+
+      <button type="submit" class="btn btn-primary" (click)="AddClientDetail()">Rajouter</button>
+
+    </div>
+    <div class="col-lg-auto">
+
+      <table class="table table-hover table-dark">
+        <thead>
+        <tr>
+          <th scope="col">Objectif de la cliente</th>
+          <th scope="col">Etat des cheveux</th>
+          <th scope="col">Produits Acheter</th>
+          <th scope="col">Routine Proposée</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let clientDetail of clientDetails">
+          <td>{{clientDetail.goal}}</td>
+          <td>{{clientDetail.hairState}}</td>
+          <td>{{clientDetail.itemBought}}</td>
+          <td>{{clientDetail.routine}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
