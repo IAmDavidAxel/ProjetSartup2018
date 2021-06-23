@@ -16,7 +16,7 @@
         <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <jetty.version>LATEST</jetty.version>
+        <jetty.version>9.4.41.v20210516</jetty.version>
         <jersey.version>2.7</jersey.version>
         <jackson.version>2.9.8</jackson.version>
         <junit.version>4.12</junit.version>
